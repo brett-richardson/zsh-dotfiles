@@ -2,13 +2,13 @@
 ZSH=$HOME/.oh-my-zsh
 
 # Configure Google Go
-GOPATH=$HOME/code/go
+# GOPATH=$HOME/code/go
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="jgorset"
+ZSH_THEME="bira"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -32,7 +32,7 @@ export DISABLE_AUTO_TITLE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git bundler github heroku knife node npm rails rake redis-cli ruby rvm ssh-agent vagrant vi-mode vundle)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -43,11 +43,11 @@ export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/bin
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
 # NPM
-export PATH=/usr/local/share/npm/bin:$PATH
+# export PATH=/usr/local/share/npm/bin:$PATH
 
 # Ruby environment
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+# export PATH="$HOME/.rbenv/bin:$PATH"
+# eval "$(rbenv init -)"
 
 # Don't autocorrect
 unsetopt correct_all
@@ -55,5 +55,5 @@ unsetopt correct_all
 # Set locale
 export LC_ALL=en_US.UTF-8
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+# Added by the Heroku Toolbelt
+#export PATH="/usr/local/heroku/bin:$PATH"
